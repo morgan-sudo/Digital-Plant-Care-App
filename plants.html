@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants - Digital Plant Care Companion</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="plants.html">Plants</a></li>
+                <li><a href="care_schedule.html">Care Schedule</a></li>
+                <li><a href="growth_tracker.html">Growth Tracker</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="plants-list">
+            <h1>Your Plants</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search plants...">
+                <button>Search</button>
+            </div>
+            <div class="plants-container">
+                <!-- Plant cards will be dynamically generated here -->
+            </div>
+        </section>
+        
+        <section id="add-plant">
+            <h2>Add New Plant</h2>
+            <form id="add-plant-form">
+                <label for="plant-name">Plant Name:</label>
+                <input type="text" id="plant-name" name="plant-name" required>
+                <label for="watering-schedule">Watering Schedule:</label>
+                <input type="text" id="watering-schedule" name="watering-schedule" required>
+                <label for="light-requirements">Light Requirements:</label>
+                <input type="text" id="light-requirements" name="light-requirements" required>
+                <button type="submit">Add Plant</button>
+            </form>
+        </section>
+
+        <section id="plant-report">
+            <h2>Plant Report</h2>
+            <button id="download-report">Download PDF Report</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Digital Plant Care Companion</p>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growth Tracker - Digital Plant Care Companion</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="plants.html">Plants</a></li>
+                <li><a href="care_schedule.html">Care Schedule</a></li>
+                <li><a href="growth_tracker.html">Growth Tracker</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="growth-tracker">
+            <h1>Growth Tracker</h1>
+            <div class="growth-chart">
+                <!-- Growth chart with progress bars will be dynamically generated here -->
+            </div>
+            <div class="add-note">
+                <h2>Add Growth Note</h2>
+                <form id="add-note-form">
+                    <label for="note-date">Date:</label>
+                    <input type="date" id="note-date" name="note-date" required>
+                    <label for="note-description">Description:</label>
+                    <textarea id="note-description" name="note-description" required></textarea>
+                    <button type="submit">Add Note</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Digital Plant Care Companion</p>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
